@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <title>e-shop pwa</title>
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>welcome to e-shop!</h1>
+        <button onclick="alert('added to cart!')">add to cart</button>
+        <script>
+            if( 'serviceworker' in navigator) {navigator.serviceworker.register('/service-worker.js').then(regconsole.log('service worker registered')).catch(errconsole.log('service worker failed',err));}
+</script>
+</body>
+</html>
